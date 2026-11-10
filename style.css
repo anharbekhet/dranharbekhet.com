@@ -114,3 +114,32 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   .glow{animation:gl 4s ease-in-out infinite}
   @keyframes gl{50%{opacity:.55}}
 }
+/* Booking page */
+nav.top a.l.cta{background:var(--star);color:#2b2100;opacity:1;padding:6px 14px;border-radius:999px;text-decoration:none}
+nav.top a.l.cta:hover,nav.top a.l.cta:focus-visible{text-decoration:none;filter:brightness(1.05)}
+.offers{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.offer{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.offer h3{font-size:22px;font-weight:600}
+.offer dl{margin:0;display:flex;flex-wrap:wrap;gap:6px 24px;font-size:15px}
+.offer dl div{display:flex;gap:6px}
+.offer dt{font-weight:800;color:var(--teal)}
+.offer dd{margin:0}
+.offer .fits{color:var(--muted);font-size:15px}
+.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.steps li{counter-increment:s;display:flex;flex-direction:column;gap:6px}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:600;font-size:20px;width:44px;height:44px;border-radius:50%;background:var(--night);color:var(--star);display:grid;place-items:center}
+.steps b{font-family:var(--display);font-weight:600;font-size:19px}
+.steps span{color:var(--muted)}
+.request{background:var(--teal-soft);border-radius:24px;padding:36px clamp(20px,4vw,48px);display:grid;grid-template-columns:.8fr 1.2fr;gap:32px}
+.request-intro{display:flex;flex-direction:column;gap:10px}
+.request h2{font-size:clamp(24px,3vw,32px);font-weight:600}
+.request-intro p{color:var(--muted)}
+.email{color:var(--ink);word-break:break-all}
+.bookform{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.bookform label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:15px;min-width:0}
+.bookform .wide{grid-column:1/-1}
+.bookform input,.bookform select,.bookform textarea{font:inherit;font-weight:400;padding:10px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);width:100%}
+.bookform input:focus-visible,.bookform select:focus-visible,.bookform textarea:focus-visible{outline:3px solid var(--teal);outline-offset:1px}
+.bookform button{grid-column:1/-1;justify-self:start;border:0;cursor:pointer}
+@media (max-width:860px){.offers,.steps,.request,.bookform{grid-template-columns:1fr}}
+.spotify{width:100%;max-width:100%;border:0;border-radius:12px;display:block}
