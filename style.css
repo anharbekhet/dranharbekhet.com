@@ -154,3 +154,17 @@ img.portrait{padding:0;border:4px solid var(--star);object-fit:cover;box-shadow:
 .hope h3{font-size:22px;font-weight:600;color:var(--star)}
 .hope p{margin-top:8px;opacity:.92}
 @media (max-width:860px){.about-story,.hopes{grid-template-columns:1fr}}
+/* Read a sample */
+.row-btns{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.row-btns .price{flex-basis:100%;order:3}
+.btn.ghost-dark{background:transparent;border-color:var(--teal);color:var(--teal);cursor:pointer;font:inherit;font-family:var(--display);font-weight:600;font-size:17px}
+.sample-link{font-weight:800;font-size:15px}
+dialog.sample{width:min(1100px,calc(100vw - 24px));max-height:calc(100vh - 24px);border:0;border-radius:18px;padding:0;background:var(--surface);color:var(--ink)}
+dialog.sample::backdrop{background:rgba(15,22,42,.75)}
+.sample-head{display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--surface)}
+.sample-head b{font-family:var(--display);font-weight:600;font-size:18px}
+.sample-head span{color:var(--muted);font-size:14px}
+.sample-head .close{margin-left:auto;border:0;background:var(--teal-soft);color:var(--ink);width:36px;height:36px;border-radius:50%;font-size:16px;cursor:pointer}
+.pages{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:16px 18px}
+.pages img{flex:none;width:min(480px,80vw);height:auto;scroll-snap-align:start;border-radius:8px;box-shadow:0 6px 18px -10px rgba(20,30,60,.5)}
+.sample-foot{padding:4px 18px 18px;font-weight:700}
