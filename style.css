@@ -169,3 +169,32 @@ dialog.sample::backdrop{background:rgba(15,22,42,.75)}
 .pages img{flex:none;width:min(480px,80vw);height:auto;scroll-snap-align:start;border-radius:8px;box-shadow:0 6px 18px -10px rgba(20,30,60,.5)}
 .sample-foot{padding:4px 18px 18px;font-weight:700}
 .pages img.tall{width:auto;height:min(72vh,620px);max-width:80vw}
+/* paths + workshops */
+.paths{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.path{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:10px;color:var(--ink);text-decoration:none;min-width:0;transition:transform .15s,box-shadow .15s}
+.path:hover,.path:focus-visible{transform:translateY(-2px);box-shadow:0 14px 28px -18px rgba(20,30,60,.5)}
+.path-icon{font-size:30px;line-height:1}
+.path h3{font-size:20px;font-weight:600}
+.path p{color:var(--muted);font-size:15px;flex:1;margin:0}
+.path .go{font-weight:800;color:var(--teal)}
+.stage{scroll-margin-top:24px;margin-bottom:48px}
+.stage:last-child{margin-bottom:0}
+.offer{scroll-margin-top:24px}
+.stage-nav{font-weight:700;margin:0 0 28px}
+.ws-link{font-weight:700}
+.bring-list{margin:0;padding-left:20px;display:grid;gap:10px;font-size:17px}
+.small-note{font-size:14px;opacity:.85}
+@media (max-width:860px){.paths{grid-template-columns:1fr}}
+.workshops{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.workshop{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:12px;min-width:0;scroll-margin-top:24px}
+.workshop h2{font-size:clamp(24px,2.6vw,30px);font-weight:600;margin:0}
+.workshop h3{font-size:18px;font-weight:600;margin:6px 0 0}
+.workshop .eyebrow{margin:0;color:var(--rose)}
+.workshop dl{margin:0;display:grid;gap:4px;font-size:15px}
+.workshop dl div{display:flex;gap:8px;flex-wrap:wrap}
+.workshop dt{font-weight:800;color:var(--teal)}
+.workshop dd{margin:0}
+.workshop ul{margin:0;padding-left:20px;display:grid;gap:6px}
+.workshop .fits{color:var(--muted);font-size:15px;margin-top:auto}
+.workshop .btn{align-self:flex-start}
+@media (max-width:860px){.workshops{grid-template-columns:1fr}}
