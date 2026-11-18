@@ -168,3 +168,4 @@ dialog.sample::backdrop{background:rgba(15,22,42,.75)}
 .pages{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:16px 18px}
 .pages img{flex:none;width:min(480px,80vw);height:auto;scroll-snap-align:start;border-radius:8px;box-shadow:0 6px 18px -10px rgba(20,30,60,.5)}
 .sample-foot{padding:4px 18px 18px;font-weight:700}
+.pages img.tall{width:auto;height:min(72vh,620px);max-width:80vw}
